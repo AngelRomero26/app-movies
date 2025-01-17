@@ -8,8 +8,6 @@ import { StatusBar } from 'expo-status-bar';
 //import { Tabs} from 'expo-router'
 const { MeiliSearch } = require ('meilisearch');
 
-
-
 const client = new MeiliSearch({
   host: '172.233.129.212',
   apiKey: '9674910d2440954f136b0e1537007301972088cd71ca00c44008f4a9a024',
@@ -25,7 +23,7 @@ const index = client.index('movies')
       { id: 5, title: 'Moana', genres: ['Fantasy', 'Action']},
       { id: 6, title: 'Philadelphia', genres: ['Drama'] },
   ]
-  
+
 export default function HomeScreen() {
   return (
    <View style = {styles.titleContainer}>

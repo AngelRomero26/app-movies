@@ -17,14 +17,7 @@ const client = new MeiliSearch({
 });
 
 
-  const documents = [
-      { id: 1, title: 'Carol', genres: ['Romance', 'Drama'] },
-      { id: 2, title: 'Wonder Woman', genres: ['Action', 'Adventure'] },
-      { id: 3, title: 'Life of Pi', genres: ['Adventure', 'Drama'] },
-      { id: 4, title: 'Mad Max: Fury Road', genres: ['Adventure', 'Science Fiction'] },
-      { id: 5, title: 'Moana', genres: ['Fantasy', 'Action']},
-      { id: 6, title: 'Philadelphia', genres: ['Drama'] },
-  ]
+
   
 export default function HomeScreen() {
   
@@ -77,26 +70,48 @@ export default function HomeScreen() {
   );
 }
 
+
 const styles = StyleSheet.create({
   container:{
     flex:1,
-    backgroundColor: "#f8f9fa"
+    backgroundColor: "#f8f9fa",
+    padding: 20,
   },
   header:{
+    fontSize: 24,
+    fontWeight: "bold",
+    marginBottom: 20,
+    textAlign: "center",
   },
   input:{
+    height: 40,
+    borderColor: "#ccc",
+    borderWidth: 1,
+    borderRadius: 5,
+    paddingHorizontal: 10,
+    marginBottom: 20,
   },
   listContainer:{
-
+    marginTop: 10,
   },
   resultItem:{
-
+    padding: 15,
+    backgroundColor: "#fff",
+    borderRadius: 5,
+    marginBottom: 10,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.1,
+    shadowRadius: 3,
+    elevation: 2,
   },
   title:{
-
+    fontSize: 18,
+    fontWeight: "bold",
   },
   genre:{
-
+    fontSize: 14,
+    color: "#6c757d",
   },
 });
 
